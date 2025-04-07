@@ -1,0 +1,310 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 94px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: #332971;
+    --primary-color: #46399c;
+    --secondary-color: #5948c6;
+    --text-color: #6c58f1;
+    --base-color: white;
+
+}
+
+body {
+    background-color: var(--body-color);
+    padding-top: 46px;
+}
+
+
+.horizontal-nav {
+    background-color: var(--primary-color);
+}
+
+.navbar-nav li a {
+    color: var(--base-color);
+}
+
+.navbar-nav li a:hover {
+    color: black;
+}
+
+
+.icon {
+    color: var(--base-color);
+}
+
+.icon:hover {
+    color: black;
+}
+
+.text-div {
+    color: var(--base-color);
+}
+
+.resume-btn {
+    background-color: var(--text-color);
+    color: var(--base-color);
+    border: 2px solid var(--text-color);
+}
+
+.resume-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--base-color);
+}
+
+.resume-icon {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+
+.about-row {
+    background-color: var(--base-color);
+}
+
+.about-card {
+    background-image: linear-gradient(to bottom right, var(--primary-color), rgb(42, 42, 192));
+    color: var(--base-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.me {
+    color: var(--secondary-color);
+}
+
+.email-text {
+    color: var(--base-color);
+}
+
+.skills-row {
+    color: var(--base-color);
+}
+
+.mini-card {
+    background-color: var(--secondary-color);
+    border: 5px solid var(--primary-color);
+}
+
+.skills-div {
+    background-color: var(--primary-color);
+}
+
+.education-row {
+    background-color: var(--base-color);
+}
+
+.education {
+    color: var(--secondary-color);
+}
+
+.img-main {
+    background-image: url("Images/gndu.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.opaque-bg {
+    height: 300px;
+    background-color: rgba(128, 0, 128, 0.189);
+    width: 100%;
+    z-index: 1;
+    position: absolut;
+}
+
+.card-title {
+    color: var(--body-color);
+}
+
+.text-year {
+    color: rgb(210, 185, 0);
+}
+
+
+.projects-heading {
+    color: var(--base-color);
+}
+
+.project-heading {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+}
+
+.code-btn {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+}
+
+.code-btn:hover {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+.carousel-inner {
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+    height: 5px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 2px;
+}
+
+.contact-row {
+    background-color: var(--base-color);
+}
+
+.contact-card {
+    background-image: linear-gradient(to bottom right, var(--primary-color), rgb(42, 42, 192));
+    color: var(--base-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.submit-btn {
+    background-color: rgb(6, 6, 84);
+    border-radius: 15px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(10, 10, 158);
+    border-radius: 15px;
+}
+
+input,
+textarea {
+    border: 1px solid rgb(10, 10, 158);
+    border-radius: 4px;
+    padding: 2px 7px;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(50, 47, 47);
+}
+
+
+.footer-row {
+    color: var(--base-color);
+}
+
+.footer-row a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.footer-row a:hover {
+    color: rgb(108, 232, 0);
+}
+
+.contact-info i {
+    color: rgb(108, 232, 0);
+
+}
+
+.footer-row .social {
+    color: var(--base-color);
+    font-size: 20px;
+}
+
+.footer-row .social-div {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.footer-row .social-div:hover {
+    background-color: var(--body-color);
+
+}
+
+.footer-row .social-div:hover .social {
+    color: rgb(108, 232, 0);
+
+}
+
+.line {
+    background-color: var(--base-color);
+    height: 2px;
+}
+
+.design-para {
+    color: var(--base-color);
+}
+
+.name-text {
+    color: rgb(108, 232, 0);
+}
+
+footer {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.quick-links a,
+.footer-social-links {
+    transition: color 0.3s ease;
+}
+
+
+@media screen and (max-width: 500px) {
+    .project-code-btn {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+.welcome-text,
+.iam-text,
+.fullstack-text {
+    position: relative;
+    will-change: transform;
+    opacity: 0;
+}
+
+.welcome-text {
+    animation: slideInRight 0.8s ease forwards 0.2s;
+}
+
+.iam-text {
+    animation: slideInRight 0.8s ease forwards 0.4s;
+}
+
+.fullstack-text {
+    animation: slideInRight 0.8s ease forwards 0.6s;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

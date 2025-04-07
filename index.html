@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- linking bootsrap css  -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-bs-spy="scroll" data-target=".navbar" data-bs-offset="0" tabindex="0">
+  <div class="container-fluid">
+    <!-- 1st row start-->
+    <div class="row horizontal-nav py-3 fixed-top">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav fs-5 text-center mx-auto sticky-top">
+                <li class="nav-item">
+                  <a class="nav-link mx-4" href="#home" onclick="closeNavbar()">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-4" href="#about" onclick="closeNavbar()">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-4" href="#skills" onclick="closeNavbar()">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-4" href="#education" onclick="closeNavbar()">EDUCATION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-4" href="#projects" onclick="closeNavbar()">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-4" href="#contact" onclick="closeNavbar()">CONTACT</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- 1st row end-->
+    <!-- 2nd row start-->
+    <div id="home" class="row home-row py-5 my-5">
+      <div class="col-md-5 mx-auto d-flex justify-content-center align-items-center photo-div mb-5">
+        <img src="Images/PragatiPortfolioImage.jpg" class="img-fluid photo border border-3 rounded-circle rounded-3">
+      </div>
+      <div class="col-md-5 mx-auto text-break p-5 text-center text-div">
+        <h3 class="fs-1 welcome-text">WELCOME!</h3>
+        <p class="fs-1 iam-text">I am Pragati</p>
+        <p class="fs-2 fullstack-text">I am a Full Stack Developer</p>
+        <button class="btn resume-btn text-break" type="button"><a
+            href="https://drive.google.com/drive/folders/1bTDYZoz0vx3G6td9ALaoN12zz_Y1_vFd" target="_blank"
+            class="navbar-brand">My Resume<i class="fa-solid fa-chevron-right resume-icon"></i></a></button><br>
+        <div class="mt-5 mb-5">
+          <a class="navbar-brand m-4" href="mailto:pragatikapoor2965@gmail.com">
+            <i class="fa-solid fa-envelope fs-3 icon"></i>
+          </a>
+          <a class="navbar-brand m-4" href="https://www.linkedin.com/in/pragati-kapoor-6b0b48237/" target="_blank">
+            <i class="fa-brands fa-linkedin fs-3 icon"></i>
+          </a>
+          <a class="navbar-brand m-4" href="https://github.com/pragatikapoor5" target="_blank">
+            <i class="fa-brands fa-square-github fs-3 icon"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <!-- 2nd row end -->
+    <!-- 3rd row  start-->
+    <div id="about" class="row about-row py-5">
+      <div class="col-md-7 mx-auto">
+        <div class="row">
+          <div class="col-md text-center text-break">
+            <h1 class="fs-1" style="display: inline"><i class="fa-solid fa-user me-2"></i>About</h1>
+            <h1 class="fs-1 me ms-2 text-break" style="display: inline">Me</h1>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col text-start rounded-3 about-card p-4">
+            <h2 class="fs-1 text-center text-break">I'm Pragati</h2>
+            <h3 class="fs-2 text-center text-break">Full Stack Developer</h3>
+            <p class="fs-4 text-break">A BTech Computer Science and Engineering student with a passion for working in the        development field. I specialize in MERN stack and love building responsive and user-friendly websites and web
+              apps. I am always eager to learn and explore new technologies to enhance my skills. Looking for
+              opportunities to contribute and grow as a developer.</p>
+            <div class="contact-about-me fs-4">
+              <span class="email-text fs-5"><strong>Email:</strong></span>
+              <span class="email-id fs-5 text-break">pragatikapoor2965@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3rd row end-->
+    <!-- 4th row start-->
+    <div id="skills" class="row skills-row">
+      <div class="col-md-10 mx-auto my-5"> <!--col 1-> 2 rows -> row 1->skills heading, row2->mini-cards-->
+        <div class="row py-2 my-4"> <!--row 1-->
+          <div class="col-md text-center">
+            <h1><i class="fa-solid fa-laptop-code me-2"></i>Skills</h1>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="col-md-12 mx-auto skills-div rounded-3 d-flex flex-column justify-content-center">
+              <div class="row text-center mt-4 d-flex justify-content-center align-items-center">
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/nodepng.png"><br>Node.js</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/react.png"><br>React.js</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/bootstrap.png"><br>Bootstrap</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/css.png"><br>CSS</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/html.png"><br>HTML</div>
+              </div>
+              <div class="row text-center mt-1 d-flex justify-content-center align-items-center">
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/js.png"><br>JavaScript</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/c.png"><br>C</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/cpp.png"><br>C++</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/mongodb1.png"><br>MongoDB</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/mysql.png"><br>MySQL</div>
+              </div>
+              <div class="row text-center mt-1 mb-4 d-flex justify-content-center align-items-center">
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/gitpng.png"><br>Git</div>
+                <div class="col-sm-2 mini-card p-3 rounded-4"><img src="Images/githubpng.png"><br>GitHub</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 4th row end -->
+    <!-- 5th row start -->
+    <div id="education" class="row education-row">
+      <div class="col-md-10 mx-auto my-4">
+        <div class="row heading my-3 mb-3">
+          <div class="col-md text-center text-break">
+            <h1 class="fs-1" style="display: inline"><i class="fa-solid fa-user-graduate me-2"></i>My</h1>
+            <h1 class="fs-1 education ms-2 text-break text-center" style="display: inline">Education</h1>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="img-main">
+                <div class="opaque-bg"></div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-2">B.Tech in Computer Science & Engineering(CSE)</h5>
+                <p class="card-text fs-4">Guru Nanak Dev University | Amritsar</p>
+                <p class="card-text text-year fs-4">2021-2025 | Pursuing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 5th row end  -->
+    <!-- 6th row start  -->
+    <div id="projects" class="row projects-row">
+      <div class="col-md-12">
+        <div class="row my-4">
+          <div class="col-md text-center text-break projects-heading"><i
+              class="fa-solid fa-clipboard-list fs-1 me-2"></i>
+            <h1 class="fs-1" style="display: inline">Projects</h1>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md">
+
+                <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Images/p11.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p12.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p13.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2 mx-1 d-flex justify-content-between">
+              <div class="col-md-8 mt-1 project-heading d-flex justify-content-center align-items-center"
+                style="color: white">
+                <p class="fs-4 m-0 text-break">Parllax Scroll Effect WebPage</p>
+              </div>
+              <div class="col-md-3 mt-1 project-code-btn d-flex justify-content-end align-items-center"><a
+                  href="https://github.com/pragatikapoor5/Parallax-Scroll-Effect-Webpage.git" target="_blank"><button
+                    type="button" class="btn code-btn" style="color: white">Code<i
+                      class="fa-solid fa-code ms-2"></i></button></a></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md">
+
+                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                      class="active bar" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" class="bar"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" class="bar"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Images/p21.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p22.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p23.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2 mx-1 d-flex justify-content-between">
+              <div class="col-md-8 mt-1 project-heading d-flex justify-content-center align-items-center"
+                style="color: white">
+                <p class="fs-4 m-0 text-break">To-Do List</p>
+              </div>
+              <div class="col-md-3 mt-1 project-code-btn d-flex justify-content-end align-items-center"><a
+                  href="https://github.com/pragatikapoor5/To-Do-List.git" target="_blank"><button type="button"
+                    class="btn code-btn" style="color: white">Code<i class="fa-solid fa-code ms-2"></i></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md">
+
+                <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Images/p31.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p32.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p33.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2 mx-1 d-flex justify-content-between">
+              <div class="col-md-8 mt-1 project-heading d-flex justify-content-center align-items-center"
+                style="color: white">
+                <p class="fs-4 m-0 text-break">Jewels Of Elegance WebPage</p>
+              </div>
+              <div class="col-md-3 mt-1 project-code-btn d-flex justify-content-end align-items-center"><a
+                  href="https://github.com/pragatikapoor5/Jewels-Of-Elegance.git" target="_blank"><button type="button"
+                    class="btn code-btn" style="color: white">Code<i class="fa-solid fa-code ms-2"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md">
+
+                <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                      class="active bar" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" class="bar"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" class="bar"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Images/p41.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p42.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Images/p43.png" class="d-block w-100 project-carousel" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row my-2 mx-1 d-flex justify-content-between">
+              <div class="col-md-8 mt-1 project-heading d-flex justify-content-center align-items-center"
+                style="color: white">
+                <p class="fs-4 m-0 text-break">Receipt Generator</p>
+              </div>
+              <div class="col-md-3 mt-1 project-code-btn d-flex justify-content-end align-items-center"><a
+                  href="https://github.com/pragatikapoor5/Receipt-Calculator.git" target="_blank"><button type="button"
+                    class="btn code-btn" style="color: white">Code<i class="fa-solid fa-code ms-2"></i></button></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- 6th row end  -->
+    <!-- 7th row start  -->
+    <div id="contact" class="row contact-row py-5">
+      <div class="col-md-8 mx-auto">
+        <div class="row">
+          <div class="col-md text-center text-break">
+            <h1 class="fs-1" style="display: inline"><i class="fa-solid fa-id-card-clip fs-1 me-2"></i>Get In</h1>
+            <h1 class="fs-1 me ms-2 text-break" style="display: inline">Touch</h1>
+          </div>
+        </div>
+        <div class="row py-5 mt-3">
+          <div class="col text-start rounded-3 contact-card p-4">
+            <div class="row">
+              <div class="col-sm-6">
+                <div><img class="img-fluid" src="Images/contactimg2.jpg"></div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row my-4">
+                  <div class="col d-flex justify-content-start">
+                    <label><i class="fa-solid fa-user"></i></label>
+                    <input type="text" class="w-100 ms-2" placeholder="Name">
+                  </div>
+                </div>
+                <div class="row my-4">
+                  <div class="col d-flex justify-content-start">
+                    <label><i class="fa-solid fa-envelope"></i></label>
+                    <input type="text" class="w-100 ms-2" placeholder="Email">
+                  </div>
+                </div>
+                <div class="row mt-4 mb-3">
+                  <div class="col d-flex justify-content-start">
+                    <label><i class="fa-solid fa-message"></i></label>
+                    <textarea name="msg" rows="5" cols="45" class="w-100 ms-2" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-center">
+                    <button type="button" class="btn submit-btn d-flex justify-content-center align-items-center fs-6"
+                      style="color: white"><span class="me-2">Submit</span><i
+                        class="fa-solid fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 7th row start  -->
+    <!-- footer start -->
+    <footer>
+      <div class="row footer-row m-3">
+        <div class="col p-0 m-0 d-flex flex-row justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-md-4 pragati-portfolio mt-3">
+              <h3>Pragati's Portfolio</h3>
+              <div class="row">
+                <div class="col text-break">
+                  <p>Thank you for visiting my portfolio! <br><span>I appreciate your time - let's stay connected
+                      through my social channels.</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="m-0">Rise and Shine <img src="Images/shine.png"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 quick-links mt-3">
+              <h3>Quick Links</h3>
+              <div class="row">
+                <div class="col">
+                  <a href="#home"><i class="fa-solid fa-circle-chevron-right me-1"></i>Home</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#about"><i class="fa-solid fa-circle-chevron-right me-1"></i>About</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#skills"><i class="fa-solid fa-circle-chevron-right me-1"></i>Skills</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#education"><i class="fa-solid fa-circle-chevron-right me-1"></i>Education</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#projects"><i class="fa-solid fa-circle-chevron-right me-1"></i>Projects</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col"><a href="#contact"><i class="fa-solid fa-circle-chevron-right me-1"></i>Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 contact-info mt-3">
+              <h3>Contact Info</h3>
+              <div class="row">
+                <div class="col">
+                  <p><i class="fa-solid fa-phone me-2"></i>+91 7986198753</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><i class="fa-solid fa-envelope me-2"></i>pragatikapoor2965@gmail.com</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><i class="fa-solid fa-location-dot me-2"></i>Punjab, India-144601</p>
+                </div>
+              </div>
+              <div class="row footer-social-links">
+                <div class="col-2 social-div d-flex justify-content-center align-items-center"><a class="navbar-brand"
+                    href="mailto:pragatikapoor2965@gmail.com">
+                    <i class="fa-solid fa-envelope social"></i>
+                  </a></div>
+                <div class="col-2 social-div d-flex justify-content-center align-items-center"><a class="navbar-brand"
+                    href="https://www.linkedin.com/in/pragati-kapoor-6b0b48237/" target="_blank">
+                    <i class="fa-brands fa-linkedin social"></i>
+                  </a></div>
+                <div class="col-2 social-div d-flex justify-content-center align-items-center"><a class="navbar-brand"
+                    href="https://github.com/pragatikapoor5" target="_blank">
+                    <i class="fa-brands fa-square-github social"></i>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 p-0">
+        <div class="col d-flex justify-content-center align-items-center">
+          <hr class="w-100 line"><br>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <p class="design-para">Designed With <img src="Images/heart.png"> By <span class="name-text">Pragati
+            Kapoor</span></p>
+      </div>
+    </footer>
+    <!-- footer end  -->
+  </div>
+
+
+
+
+  <!-- linking bootsrap js  -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
